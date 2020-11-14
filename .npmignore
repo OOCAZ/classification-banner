@@ -1,0 +1,7 @@
+*.swp
+node_modules
+.idea
+.babelrc
+.eslintignore
+.eslintrc.json
+*.code-workspace
