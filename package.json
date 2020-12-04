@@ -1,35 +1,15 @@
 {
-  "name": "@jacobs.com/classification-banner",
+  "name": "@mobdata/classification-banner",
   "version": "1.0.0",
   "description": "A React component for displaying the classification of data in a web application.",
   "main": "./dist/index.js",
   "contributors": [
-    {
-      "name": "Adam McAree",
-      "email": "arm1686@g.rit.edu"
-    },
-    {
-      "name": "Connor Bulakites",
-      "email": "connor@bulakites.net",
-      "url": "https://www.connorbulakites.com"
-    },
-    {
-      "name": "Daniel Kelly",
-      "email": "daniel.brandon.kelly@gmail.com",
-      "url": "https://www.dankelly.dev"
-    },
-    {
-      "name": "Marita Carballo",
-      "email": "maritacarballo@gmail.com"
-    },
-    {
-      "name": "Timothy McKernan",
-      "email": "timbitsandbytes@gmail.com"
-    },
-    {
-      "name": "Christian Turner",
-      "email": "cturner5@umd.edu"
-    }
+    "Adam McAree <arm1686@g.rit.edu>",
+    "Connor Bulakites <connor@bulakites.net> (https://www.connorbulakites.com)",
+    "Daniel Kelly <daniel.brandon.kelly@gmail.com> (https://www.dankelly.dev)",
+    "Marita Carballo <maritacarballo@gmail.com>",
+    "Timothy McKernan <timbitsandbytes@gmail.com>",
+    "Christian Turner <cturner5@umd.edu>"
   ],
   "license": "MIT",
   "scripts": {
@@ -40,7 +20,7 @@
   "pre-commit": [
     "lint"
   ],
-  "homepage": "./classification-banner",
+  "homepage": "http://github.com/mobdata/classification-banner#readme",
   "dependencies": {
     "react": "^16.13.1"
   },
@@ -60,5 +40,13 @@
     "pre-commit": "^1.2.2",
     "webpack": "4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobdata/classification-banner.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/mobdata/classification-banner/issues"
   }
 }

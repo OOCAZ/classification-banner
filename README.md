@@ -10,14 +10,14 @@ top secret//sci markings.
 ## Install
 
 ````bash
-npm install --save '@jacobs.com/classification-banner'
+npm install --save '@mobdata/classification-banner'
 ````
 
 ## Usage
 
 ````js
 import React, { Component } from 'react';
-import ClassificationBanner from '@jacobs.com/classification-banner';
+import ClassificationBanner from '@mobdata/classification-banner';
 import logo from './logo.svg';
 import './App.css';
 
