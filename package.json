@@ -1,6 +1,6 @@
 {
   "name": "@mobdata/classification-banner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component for displaying the classification of data in a web application.",
   "main": "./dist/index.js",
   "contributors": [
