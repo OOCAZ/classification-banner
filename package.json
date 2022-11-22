@@ -1,6 +1,6 @@
 {
   "name": "react-classification-banner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component for displaying the classification of data in a web application.",
   "main": "./dist/index.js",
   "contributors": [
