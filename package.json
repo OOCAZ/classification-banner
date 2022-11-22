@@ -4,6 +4,7 @@
   "description": "A React component for displaying the classification of data in a web application.",
   "main": "./dist/index.js",
   "contributors": [
+    "Zac Poorman <zacpoorman@gmail.com>",
     "Adam McAree <arm1686@g.rit.edu>",
     "Connor Bulakites <connor@bulakites.net> (https://www.connorbulakites.com)",
     "Daniel Kelly <daniel.brandon.kelly@gmail.com> (https://www.dankelly.dev)",
@@ -20,7 +21,7 @@
   "pre-commit": [
     "lint"
   ],
-  "homepage": "http://github.com/mobdata/classification-banner#readme",
+  "homepage": "http://github.com/oocaz/classification-banner#readme",
   "dependencies": {
     "react": "^16.13.1"
   },
@@ -43,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mobdata/classification-banner.git"
+    "url": "git+https://github.com/oocaz/classification-banner.git"
   },
   "author": "",
   "bugs": {

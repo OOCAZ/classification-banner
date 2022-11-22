@@ -11,7 +11,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#000000',
-    color: '#ffffff',
+    color: '#c8102e',
   },
   top: {
     top: 0,
@@ -26,6 +26,10 @@ const styles = {
   confidential: {
     color: '#ffffff',
     backgroundColor: '#0033a0',
+  },
+  cui: {
+    color: '#ffffff',
+    backgroundColor: '#06a94d',
   },
   secret: {
     color: '#ffffff',
@@ -52,6 +56,8 @@ const ClassificationBanner = (props) => {
     classificationStyle = 'unclassified'
   } else if (transformedClassification.startsWith('confidential')) {
     classificationStyle = 'confidential'
+  } else if (transformedClassification.startsWith('cui')) {
+    classificationStyle = 'cui'
   } else if (transformedClassification.startsWith('secret')) {
     classificationStyle = 'secret'
   } else if (transformedClassification.startsWith('topsecret_sci')) {
@@ -71,12 +77,5 @@ const ClassificationBanner = (props) => {
   )
 }
 
-ClassificationBanner.propTypes = {
-  classification: PropTypes.string,
-}
-
-ClassificationBanner.defaultProps = {
-  classification: 'Unclassified',
-}
 
 export default ClassificationBanner
