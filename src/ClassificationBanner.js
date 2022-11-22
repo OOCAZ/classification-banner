@@ -1,5 +1,4 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 
 const styles = {
   container: {
@@ -76,6 +75,5 @@ const ClassificationBanner = (props) => {
     </div>
   )
 }
-
 
 export default ClassificationBanner
