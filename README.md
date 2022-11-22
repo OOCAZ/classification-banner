@@ -12,6 +12,8 @@ Use like a normal React Component with the only specifier needed being the class
 npm install --save 'react-classification-banner'
 ````
 
+## Basic Usage (usually in your index.js, then it renders over everything)
+
 ```js
 import React from "react";
 import ClassificationBanner from "react-classification-banner";
@@ -37,9 +39,9 @@ Please feel free to comment of go to the Github Repo and submit an issue if you 
 
 ### I Take big inspiration and a lot of the base code from @mobdata
 
+
 Go check out their stuff: https://github.com/mobdata# classification-banner
 
-A simple React component to put a classification banner at the top and bottom of an app.
 
 ## License
 
