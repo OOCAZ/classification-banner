@@ -33,6 +33,9 @@ The colors are automatic and if you enter an invalid value the banner will be bl
 
 Please feel free to comment of go to the Github Repo and submit an issue if you have a question or would like to see additional functionality. 
 
+
+## Additional info, the build will only work on windows rn, working on fix
+
 ### Github Link: 
 
 (https://github.com/OOCAZ/react-classification-banner)
