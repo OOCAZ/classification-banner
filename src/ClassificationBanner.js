@@ -70,8 +70,8 @@ const ClassificationBanner = (props) => {
 
   return (
     <div>
-      <div style={topStyle}>{classification.toUpperCase()}</div>
-      <div style={bottomStyle}>{classification.toUpperCase()}</div>
+      <div data-testid="classification-header" style={topStyle}>{classification.toUpperCase()}</div>
+      <div data-testid="classification-footer" style={bottomStyle}>{classification.toUpperCase()}</div>
     </div>
   )
 }

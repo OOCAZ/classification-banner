@@ -5,3 +5,4 @@ node_modules
 .eslintignore
 .eslintrc.json
 *.code-workspace
+/dist/ClassificationBanner.test.js
