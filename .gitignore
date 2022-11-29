@@ -4,3 +4,4 @@ dist
 .idea
 *.code-workspace
 package-lock.json
+coverage/
