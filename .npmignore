@@ -8,3 +8,5 @@ node_modules
 /dist/ClassificationBanner.test.js
 /src/ClassificationBanner.test.js
 coverage
+.gitignore
+src

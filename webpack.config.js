@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: [path.resolve(__dirname, './src/index.js')],
+  entry: [path.resolve(__dirname, './dist/ClassificationBanner.js')],
   output: {
     path: path.resolve(__dirname, './dist/'),
     publicPath: '../classification-banner'
