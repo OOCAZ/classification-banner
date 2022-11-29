@@ -6,3 +6,5 @@ node_modules
 .eslintrc.json
 *.code-workspace
 /dist/ClassificationBanner.test.js
+/src/ClassificationBanner.test.js
+coverage
