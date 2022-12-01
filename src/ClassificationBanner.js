@@ -1,34 +1,17 @@
 import React from 'react'
 
 const styles = {
-  container: {
-    position: 'fixed',
-    display: 'flex',
-    height: 25,
-    width: '100%',
-    zIndex: 10000,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#000000',
-    color: '#c8102e',
-  },
-  top: {
-    top: 0,
-  },
-  bottom: {
-    bottom: 0,
-  },
   unclassified: {
     color: '#ffffff',
     backgroundColor: '#000000',
   },
-  confidential: {
-    color: '#ffffff',
-    backgroundColor: '#0033a0',
-  },
   cui: {
     color: '#ffffff',
     backgroundColor: '#06a94d',
+  },
+  confidential: {
+    color: '#ffffff',
+    backgroundColor: '#0033a0',
   },
   secret: {
     color: '#ffffff',
@@ -42,38 +25,38 @@ const styles = {
     color: '#000000',
     backgroundColor: '#f7ea48',
   },
+  top: {
+    position: 'fixed',
+    display: 'flex',
+    height: 25,
+    width: '100%',
+    zIndex: 10000,
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#c8102e',
+    backgroundColor: '#000000',
+    top: 0,
+  },
+  bottom: {
+    position: 'fixed',
+    display: 'flex',
+    height: 25,
+    width: '100%',
+    zIndex: 10000,
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#c8102e',
+    backgroundColor: '#000000',
+    bottom: 0,
+  },
 }
 
-const ClassificationBanner = (props) => {
-  const { classification } = props
-  const spaceRegex = / /g
-  const slashRegex = /\/\//g
-  const transformedClassification = classification.replace(spaceRegex, '').replace(slashRegex, '_').toLowerCase()
-
-  let classificationStyle = ''
-  if (transformedClassification.startsWith('unclassified')) {
-    classificationStyle = 'unclassified'
-  } else if (transformedClassification.startsWith('confidential')) {
-    classificationStyle = 'confidential'
-  } else if (transformedClassification.startsWith('cui')) {
-    classificationStyle = 'cui'
-  } else if (transformedClassification.startsWith('secret')) {
-    classificationStyle = 'secret'
-  } else if (transformedClassification.startsWith('topsecret_sci')) {
-    classificationStyle = 'topsecret_sci'
-  } else if (transformedClassification.startsWith('topsecret')) {
-    classificationStyle = 'topsecret'
-  }
-
-  const topStyle = { ...styles.container, ...styles.top, ...styles[classificationStyle] }
-  const bottomStyle = { ...styles.container, ...styles.bottom, ...styles[classificationStyle] }
+ export default function ClassificationBanner(classification){
 
   return (
     <div>
-      <div data-testid="classification-header" style={topStyle}>{classification.toUpperCase()}</div>
-      <div data-testid="classification-footer" style={bottomStyle}>{classification.toUpperCase()}</div>
+      <div data-testid="classification-header" style={{...styles.top, ...styles[classification.classification.toString()]}}>{classification.classification.toUpperCase()}</div>
+      <div data-testid="classification-footer" style={{...styles.bottom, ...styles[classification.classification.toString()]}}>{classification.classification.toUpperCase()}</div>
     </div>
   )
 }
-
-export default ClassificationBanner
